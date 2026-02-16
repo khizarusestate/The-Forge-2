@@ -5,7 +5,7 @@ export default function Home({ isPackageFormOpen, selectedPackage, onOpenPackage
    const facilities=[{title:"Free Fitness Assessment",disc:"A complete body and fitness evaluation to set clear goals and track real progress."},{title:"Free Trial Training",disc:"Train once with our expert coach and experience our gym, equipment, and energy."},{title:"Free Workout Plan",disc:"A customized workout routine designed to match your body type and fitness goals."}];
 
     return(
-        <main className="min-h-screen w-full flex flex-col justify-center bg-[url('/assets/HomeBG.png')] bg-cover bg-center relative px-3 py-20 md:h-screen md:min-h-0 md:px-8">
+        <main className="min-h-screen w-full flex flex-col justify-center bg-[url('/assets/HomeBG.png')] bg-cover bg-center relative px-3 py-30 md:h-screen md:min-h-0 md:px-8">
           <Packages isOpen={isPackageFormOpen} selectedPackage={selectedPackage} onClose={onClosePackageForm} />
 
           <section className="w-full flex flex-col gap-6 justify-center items-center relative z-10 md:gap-[30px] md:min-h-[65vh]" >
