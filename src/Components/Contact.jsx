@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-const API_BASE = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000";
+const API_BASE = "https://the-forge2-server.vercel.app";
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -108,6 +108,7 @@ export default function Contact() {
           placeholder="Your Message"
           className="h-[180px] md:h-[200px] w-full md:w-[60%] text-center rounded-[15px] border border-white text-white p-3"
         />
+
         <motion.button
           whileHover={{ y: -6, opacity: 0.95 }}
           type="submit"
