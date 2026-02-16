@@ -8,7 +8,7 @@ export default function Home({ isPackageFormOpen, selectedPackage, onOpenPackage
         <main className="min-h-screen w-full flex flex-col justify-center bg-[url('/assets/HomeBG.png')] bg-cover bg-center relative px-3 py-30 md:h-screen md:min-h-0 md:px-8">
           <Packages isOpen={isPackageFormOpen} selectedPackage={selectedPackage} onClose={onClosePackageForm} />
 
-          <section className="w-full flex flex-col gap-6 justify-center items-center relative z-10 md:gap-[10px] md:min-h-[65vh]" >
+          <section className="w-full flex flex-col gap-6 justify-center items-center relative z-10 md:gap-[20px] md:min-h-[65vh]" >
               <motion.header initial={{clipPath:"inset(0 100% 0 0)",y:20,opacity:0}} whileInView={{clipPath:"inset(0 0 0 0)",y:0,opacity:1}} viewport={{ once: true }} transition={{duration:1}} className="text-center text-white">
                  <h1 className="text-[34px] leading-[1.1] font-extrabold md:text-[50px]">Build Strength. Shape Confidence.</h1>
                  <h2 className="mt-2 text-[14px] font-bold md:text-[18px]">Train smarter. Get stronger. Become your best self with world-class equipment and expert coaching.</h2>
